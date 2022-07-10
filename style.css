@@ -430,11 +430,13 @@
         width: 100%;
         margin: auto;
     }
+    
     .short_note {
         width: 100%;
         display: flex;
-        padding: 0;
+        padding-right: 3.0rem;
         margin: auto;
+        height: 40vh; 
     }   
 
     .home_content {
@@ -460,6 +462,14 @@
         .award {
             display: flex;
             padding: 0;
+            width: 100%;
         }
+    
+    .design {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-right: 1.5rem;
+    }
 }
 
