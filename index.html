@@ -4,76 +4,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <title>Front End Master</title>
+    <title>Front-End Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="index.html" id="navbar_logo">frontendMaster.</a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="index.html" class="navbar_links" id="home">Home</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="about.html" class="navbar_links" id="about">About</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="services.html" class="navbar_links" id="services">Services</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="contact.html" class="navbar_links" id="contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="home_content">
-        <div class="swiper">
-            <div class="swiper_wrapper">
-                <div class="swiper_slide">
-                    <div class="slide_content">
-                        <img src="images/frontend.jpg" alt="frontend">
-                        <div class="content">
-                            <span class="serial">01</span>
-                            <div class="info">
-                                <h1>Web Design</h1>
-                                <a href="WebDeveloping.html" class="btn">NEXT</a>
-                            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navbar-brand" href="index.html">[Front-End Master]</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-2 text-center" id="offcanvasDarkNavbarLabel">Front-End Master</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4 text-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item text-center" href="#webdesign">Responsive Web Design</a></li>
+                    <li><a class="dropdown-item text-center" href="#react.js">React.JS Development</a></li>
+                    <li><a class="dropdown-item text-center" href="#node.js">Node.JS Development</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Ends -->
+
+      <!-- Header -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/frontend.jpg" class="d-block w-100" alt="frontend">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-warning">Web Design</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/frontend2.jpg" class="d-block w-100" alt="frontend">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-warning">Web Developing</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Header Ends -->
+
+    <!-- About -->
+      <div class="about bg-dark" id="about">
+        <hr class="text-light">
+        <div class="container bg-dark">
+            <h1 class="about text-light">ABOUT US</h1>
+            <h2 class="about text-warning">Who Are We?</h2>
+            <p class="about text-light">FrontEndMaster started as an outsourcing company in 2022, providing expertise-based services to 
+                global clients. As our relationship with clients evolved, we aimed to provide value to clients beyond expertise through innovative solutions, processes, and people.
+                Our Mission is to delight our clients in the quality of our software development service and provide an attractive job opportunity environment for our teams. Also, we want to 
+                simplify remote hiring, making it easy for global businesses to connect with the top tech talents.</p>
+        </div>
+      </div>
+
+      
+
+      <div class="about bg-dark">
+        <div class="container">
+            <h2 class="about text-warning">About Our Team</h1>
+                <p class="about text-light">Front-End Master have over 40 members of staff and each bring their own set of valuable skills and experience 
+                    from those first starting out their careers to highly experienced and certified consultants and analysts who are real specialists in their fields. `</p>
+        </div>
+      </div>
+
+      <div class="about_addition bg-warning">
+        <div class="container">
+            <h3 class="about">"Our vision is to build a talent ecosystem that connects the right talents with the right opportunities."</h3>
+        </div>
+      </div>
+<!-- About Ends -->
+
+<!-- Services -->
+<div class="services bg-dark" id="services">
+    <hr class="text-light">
+    <h1 class="services text-light">Our Services</h1>
+    <div class="container">
+        <div class="card" style="width: 22rem;">
+            <a href="#webdesign"><img src="images/frontend4.jpg" class="card-img-top" alt="frontend"></a>
+            <div class="card-body">
+              <p class="card-text bg-warning">HTML & CSS Responsive Web Design</p>
+            </div>
+          </div>
+          <div class="card" style="width: 22rem;">
+            <a href="#react.js"><img src="images/frontend5.jpg" class="card-img-top" alt="frontend"></a>
+            <div class="card-body">
+              <p class="card-text bg-warning">React JS Development</p>
+            </div>
+          </div>
+          <div class="card" style="width: 22rem;">
+            <a href="#bootstrap"><img src="images/frontend6.jpg" class="card-img-top" alt="frontend"></a>
+            <div class="card-body">
+              <p class="card-text bg-warning">Node.js Development</p>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="separation bg-warning"></div>
+
+<div class="webdesign bg-dark" id="webdesign">
+    <div class="container">
+        <h2 class="webdesign text-warning">HTML & CSS Responsive Web Design</h2>
+        <p class="webdesign text-light">Enterprise-class websites need consistent colors, fonts, and design to match the organization's branding guidelines. 
+            Front-End Master’s front-end developers are experts at designing responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.
+        Our team consists of Expert UI, UX, Visual, and Interaction designers as well as a wide range of illustrators, animators, and more.</p>
+    </div>
+    <img src="images/webdesign2.jpg" alt="frontend" id="webdesignimg">
+    <div class="separation bg-warning"></div>
+    <div class="container" id="react.js">
+        <h2 class="webdesign text-warning">React JS Development</h2>
+        <p class="webdesign text-light">Data from a Statista study shows that React JS is the most in-demand web framework in 2022, with 40.41% of software developers 
+            globally indicating they use it to develop web applications. ReactJS is renowned for its extensibility, adjustability, and convenience. Front-End Master's ReactJS developers create complex software for your business, 
+            including web browsers and mobile application user interfaces.</p>
+    </div>
+    <img src="images/react.jpg" alt="frontend" id="reactimg">
+    <div class="separation bg-warning"></div>
+    <div class="container" id="node.js">
+        <h2 class="webdesign text-warning">Node.js Development</h2>
+        <p class="webdesign text-light">Node.js enables fast and scalable server-side and networking applications. Our Node.js developers produce dynamic web page content before the page is sent to the end user's web browser, 
+            using event-driven programming to communicate with web servers through speedy JavaScript interpreters.</p>
+    </div>
+    <img src="images/node.jpg" alt="frontend" id="nodeimg">
+</div>
+<div class="separation bg-warning"></div>
+<!--Services Ends-->
+
+<!--Contact-->
+<section class="mb-4">
+
+    <div class="container bg-light">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">   
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
                         </div>
                     </div>
                 </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                        <br>
+                        
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+                    <br>
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-warning" onclick="validateForm();">Send</a>
             </div>
+            <div class="status"></div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@front-end-master.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
     </div>
-    
+</div>
+</section>
+<div class="separation bg-warning"></div>
 
-    <div class="short_note">
-        <div class="design">
-            <h1 class="internal"><span>01</span>Web Design</h1>
-            <h1 class="internal"><span>02</span>Web Developing</h1>
-        </div>
-            <div class="award">
-                <h1 class="year">Experts since 2022</h1>
-                <p class="details">Award winning web designing
-                    company based in Florida, USA.</p>
-            </div>
-        </div>
-        </div>
-    </div>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
