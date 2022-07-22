@@ -6,30 +6,6 @@ anime({
     delay: 500,
 })
 
-anime({
-    targets:'.carousel-inner h5',
-    scale:[2,1],
-    opacity:[0,1],
-    easeing: 'easeInOutExpo',
-    delay: 500,
-})
-
-anime({
-    targets:'.about h1',
-    translateX:[120,0],
-    opacity:[0,1],
-    easeing: 'easeInOutExpo',
-    delay: 500,
-})
-
-anime({
-    targets:'.services h1',
-    translateX:[120,0],
-    opacity:[0,1],
-    easeing: 'easeInOutExpo',
-    delay: 500,
-})
-
 function validateForm() {
     let name =  document.getElementById('name').value;
     if (name == "") {

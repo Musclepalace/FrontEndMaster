@@ -178,6 +178,10 @@
 }
 
 @media (max-width: 460px) {
+    .about_adittion h3 {
+        font-size: 1.2rem !important;
+    }
+
     #navbar-brand {
         font-size: 1.2rem !important;
     }
@@ -208,6 +212,10 @@
 }
 
 @media (max-width: 325px) {
+    .about_adittion h3 {
+        font-size: 1.2rem !important;
+    }
+
     #navbar {
         width: 100% !important;
         padding: 0 !important;
@@ -261,6 +269,10 @@
 
     .services img {
         width: 100% !important;
+    }
+    
+    .about_adittion h3 {
+        font-size: 1.2rem !important;
     }
 }
 
