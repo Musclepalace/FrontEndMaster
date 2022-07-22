@@ -35,3 +35,17 @@ function validateForm() {
     }
     document.querySelector('.status').innerHTML = "Sending...";
   }
+
+  $( document ).ready(function() {
+   
+    $('.dropdown-item').click(function(){
+     $('.navbar div').removeClass('show');
+  });  
+  $('#nav-link').click(function(){
+         $('.navbar div').removeClass('show');
+  });
+  $('#nav-link-contact').click(function(){
+    $('.navbar div').removeClass('show');
+});
+ 
+   });   
