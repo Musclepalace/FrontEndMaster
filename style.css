@@ -263,3 +263,9 @@
         width: 100% !important;
     }
 }
+
+@media (max-width: 570px) {
+    .col-md-6, .col-md-12 {
+        padding: 0 1rem;
+    }
+}
